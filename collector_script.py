@@ -5,6 +5,7 @@ import json
 import urllib.parse
 import pandas as pd
 import argparse, configparser
+from random import shuffle
 
 from ATB.ATB.Altmetric import Altmetric, AltmetricHTTPException
 from ATB.ATB.Facebook import Facebook
@@ -60,7 +61,7 @@ def parse_response(doi, now, doi_resolve_status, doi_resolve_error, doi_url,
 
 def fetch_dois(con, dois):
     i_max = len(dois)
-    for i, doi in enumerate(dois, 1):
+    for i, doi in enumerate(shuffle(dois), 1):
         now = datetime.datetime.now()
 
         # Init row values
