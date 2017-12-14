@@ -1,0 +1,3 @@
+[submodule "ATB"]
+	path = ATB
+	url = git@github.com:ScholCommLab/ATB.git
