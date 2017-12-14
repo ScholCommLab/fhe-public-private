@@ -61,7 +61,7 @@ def parse_response(doi, now, doi_resolve_status, doi_resolve_error, doi_url,
 
 def fetch_dois(con, dois):
     i_max = len(dois)
-    shuffle(x)
+    shuffle(dois)
     for i, doi in enumerate(dois, 1):
         now = datetime.datetime.now()
 
