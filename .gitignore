@@ -2,7 +2,5 @@
 config\.cnf
 *.db
 \.ipynb_checkpoints/
-
 \.vscode/
-
-data/output_files/
+output_files/
